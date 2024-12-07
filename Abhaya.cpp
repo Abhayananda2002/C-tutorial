@@ -5,16 +5,16 @@ using namespace std;
   {
     int n;
     cin >>n;
-    int count=1;
+    
      int i=1;
     while(i<=n) {
-         int j=1;
-        while (j<=i){
-            cout<<count;
-            count++;
-            j++;
+         int j=i;
+        while (j>=1){
+       cout<<j<< " ";
+            j--;
         }
         cout<<endl;
+       
         i++;
     }
      return 0;
