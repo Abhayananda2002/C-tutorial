@@ -5,17 +5,19 @@ using namespace std;
   {
     int n;
     cin >>n;
-    
+    char count='A';
      int i=1;
     while(i<=n) {
-         int j=i;
-        while (j>=1){
-       cout<<j<< " ";
-            j--;
+         int j=1;
+        while (j<=n){
+       cout<<count<< " ";
+          
+            j++;;
         }
         cout<<endl;
        
         i++;
+        count++;
     }
      return 0;
     }
