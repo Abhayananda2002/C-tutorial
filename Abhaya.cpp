@@ -1,19 +1,16 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
+  
+  int main()
+  {
+    
+        int i=0;
+    while(i<5)
+{
+    cout<< "hello world" << endl;
+     i++;
+}
 
-int main() {
-    int i, j, rows;
-
-    // Asking the user to input the number of rows
-    printf("Enter the number of rows: ");
-    scanf("%d", &rows);
-
-    // Loop to print the pattern
-    for(i = 1; i <= rows; ++i) {
-        for(j = 1; j <= i; ++j) {
-            printf("* ");
-        }
-        printf("\n");
-    }
 
     return 0;
 }
