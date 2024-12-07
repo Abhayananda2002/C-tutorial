@@ -9,7 +9,7 @@ using namespace std;
     while(i<=n) {
          int j=1;
         while (j<=i){
-            cout<<"*"<<" ";
+            cout<<i;
             j++;
         }
         cout<<endl;
