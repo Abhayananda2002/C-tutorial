@@ -5,15 +5,15 @@ using namespace std;
   {
     int n;
     cin >>n;
-     int i=1;
-    while(i<=n) {
-         int j=1;
-        while (j<=n){
+     int i=n;
+    while(i>=1) {
+         int j=n;
+        while (j>=1){
             cout<<j;
-            j++;
+            j--;
         }
         cout<<endl;
-        i++;
+        i--;
     }
      return 0;
     }
