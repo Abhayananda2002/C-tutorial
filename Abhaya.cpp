@@ -2,17 +2,25 @@
 using namespace std;
 
 int main() {
-    int n=10;
-    int a=0;
-    int b=1;
-   cout<<a<<" "<<b<<" ";
-    for(int i=1;i<=10;i++){
-        int nxtnumber=a+b;
-        cout<<nxtnumber<<" ";
-        a=b;
-        b=nxtnumber;
+    int n;
+    cout<<"enter the value of n"<<endl;
+   cin>>n;
+   bool isprime =1;
+   for(int i=2;i<n;i++)
+   {
+    if (n%i==0){
+    //cout<<"not a prime number"<<endl;
+    isprime=0;
+    break;
+    
+   }
+   }
+     if(isprime==0) {
+        cout<<"not a prime number"<<endl;
 
-     
+     }
+    else{
+       cout<<"is a prime number"<<endl;
     }
     
     return 0;
