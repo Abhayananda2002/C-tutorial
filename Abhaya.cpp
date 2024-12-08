@@ -6,26 +6,33 @@ int main() {
     cin >> n;
    int i=1;
   while(i<=n) {  
-    //print space 
-    int space= n-i;
-    while(space){
-        cout<<" ";
-        space--;
-    }
-    //print 1st triangle
-     int col=1;
-     while (col<=i) {
-         cout <<col;
+    //print 1st triangle 
+    int col =1;
+    while(col<=n-i+1){
+        cout<<col;
         col++;
+    }
+    //print 2nd triangle
+     int j=1;
+     while (j<=i-n+4) {
+         cout <<"*";
+        j++;
          }
-         //print 2nd triangle
-         int j=i-1;
-         while(j) 
+         //print 3rd triangle
+         int k=1;
+         while(k<=i-n+4) 
          {
-            cout<<j;
-            j--;
+            cout<<"*";
+            k++;
          }
-        
+         //print 4th triangle
+      int l=1;
+     int count=n-i+1;
+     while(l<=n-i+1) {
+        cout<<count;
+        count--;
+        l++;
+     }
     cout<<endl;
        i++;
    }
