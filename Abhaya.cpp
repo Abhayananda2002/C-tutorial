@@ -4,21 +4,22 @@ using namespace std;
 int main() {
     int n;
     cin >> n;
-
-   int row=1;
-   while (row<=n) {
+   int i=1;
+  
+    
+   while (i<=n) {
     
     int col=1;
-     char ch='A';
-    while (col<=row) {
+     char row='A'+n-i;
+    while (col<=i) {
         
-       
-        cout <<ch<<" ";
+        cout <<row<<" ";
+
        col++;
-     ch++;
+       row++;
     }
     cout<<endl;
-    row++;
+       i++;
    }
 
     return 0;
