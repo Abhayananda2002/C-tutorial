@@ -5,24 +5,12 @@ int main() {
     int n;
     cout<<"enter the value of n"<<endl;
    cin>>n;
-   bool isprime =1;
-   for(int i=2;i<n;i++)
-   {
-    if (n%i==0){
-    //cout<<"not a prime number"<<endl;
-    isprime=0;
-    break;
-    
+   for(int i=1;i<=5;i++)  {
+      cout<<"HII"<<endl;
+      cout<<"Hey"<<endl;
+      continue;
+      cout<<"reply me"<<endl;
    }
-   }
-     if(isprime==0) {
-        cout<<"not a prime number"<<endl;
-
-     }
-    else{
-       cout<<"is a prime number"<<endl;
-    }
-    
     return 0;
 }
   
