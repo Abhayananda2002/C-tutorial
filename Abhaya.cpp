@@ -2,39 +2,31 @@
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
-   int i=1;
-  while(i<=n) {  
-    //print 1st triangle 
-    int col =1;
-    while(col<=n-i+1){
-        cout<<col;
-        col++;
-    }
-    //print 2nd triangle
-     int j=1;
-     while (j<=i-n+4) {
-         cout <<"*";
-        j++;
-         }
-         //print 3rd triangle
-         int k=1;
-         while(k<=i-n+4) 
-         {
-            cout<<"*";
-            k++;
-         }
-         //print 4th triangle
-      int l=1;
-     int count=n-i+1;
-     while(l<=n-i+1) {
-        cout<<count;
-        count--;
-        l++;
-     }
-    cout<<endl;
-       i++;
-   }
+    
+     int a=3;
+     int b=5;
+     cout<< "a&b"<<(a&b)<<endl;
+     cout<< "a|b"<<(a|b)<<endl;
+     cout<< "~a"<<~a<<endl;
+     cout<< "a^b"<<(a^b)<<endl;
+
+
+     cout<< (17<<2)<<endl;
+     cout<<(17<<1)<<endl;
+     cout<<(18>>2)<<endl;
+     cout<<(18>>1)<<endl;
+     int i=7;
+     cout<< (i++) <<endl;
+    cout<< (++i) <<endl;
+    cout<< (i--) <<endl;
+     cout<< (--i) <<endl;
+     int a,b=1;
+     a=10;
+     if(++a)
+       cout<<b;
+       else
+       cout<<++b;
+
     return 0;
 }
+  
