@@ -5,18 +5,19 @@ int main() {
     int n;
     cin >> n;
    int i=1;
-  
-    
-   while (i<=n) {
-    
+  while(i<=n) {
+    char space=n-i;
+   while (space) {
+     cout <<" ";
+   
+    space--;
+   }
     int col=1;
-     char row='A'+n-i;
+     
     while (col<=i) {
-        
-        cout <<row<<" ";
-
-       col++;
-       row++;
+         cout <<"*";
+        col++;
+    
     }
     cout<<endl;
        i++;
