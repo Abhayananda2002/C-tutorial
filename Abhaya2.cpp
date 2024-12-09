@@ -2,12 +2,12 @@
 using namespace std;
 
 int main() {
-int num=2;
+char num='3';
 
 switch (num) {
     case 1: cout<<"first"<<endl;
     break;
-    case 2 : cout<<"second"<<endl;
+    case '3' : cout<<"character is three"<<endl;
     break;
     default : cout<<"it is default case"<<endl;
 
